@@ -110,7 +110,7 @@
 	name = "mouse"
 	desc = "It's a small mouse."
 	icon = 'icons/mob/animal.dmi'
-	item_icons = 'icons/mob/humans/onmob/clothing/head/critters.dmi'
+	item_icons = "icons/mob/humans/onmob/clothing/head/critters.dmi"
 	icon_state = "mouse_white"
 	w_class = SIZE_TINY;
 	flags_equip_slot = SLOT_HEAD
