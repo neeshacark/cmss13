@@ -114,7 +114,7 @@
 	w_class = SIZE_TINY;
 	flags_equip_slot = SLOT_HEAD
 	item_icons = list(
-		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/critters.dmi'
+		WEAR_HEAD = "icons/mob/humans/onmob/clothing/head/critters.dmi"
 	)
 
 /obj/item/holder/mouse/white
