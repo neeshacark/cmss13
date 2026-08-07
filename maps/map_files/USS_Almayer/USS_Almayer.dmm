@@ -8390,7 +8390,7 @@
 "avp" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/machinery/door/poddoor/almayer{
-	id = "s_umbilical";
+	id = "eventhanger";
 	name = "\improper Umbillical Airlock";
 	unacidable = 1;
 	explo_proof = 1;
@@ -36259,7 +36259,7 @@
 /area/almayer/squads/charlie)
 "bKY" = (
 /obj/structure/machinery/door/poddoor/almayer{
-	id = "s_umbilical";
+	id = "eventhanger";
 	name = "\improper Umbillical Airlock";
 	unacidable = 1;
 	explo_proof = 1;
@@ -36526,6 +36526,10 @@
 /turf/open/floor/almayer/orange,
 /area/almayer/engineering/lower)
 "bLF" = (
+/obj/structure/flora/bush/ausbushes/grassybush,
+/obj/structure/window{
+	dir = 1
+	},
 /turf/open/floor/grass,
 /area/almayer/underdeck)
 "bLG" = (
@@ -50422,6 +50426,9 @@
 /area/almayer/underdeck)
 "cqx" = (
 /obj/structure/window/framed/almayer,
+/obj/structure/machinery/door/poddoor/hybrisa/open_shutters{
+	id = "eventshutters"
+	},
 /turf/open/floor/plating,
 /area/almayer/underdeck)
 "cqy" = (
@@ -50493,13 +50500,10 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/shipboard/brig/processing)
-"cqK" = (
-/turf/open/floor/plating/plating_catwalk,
-/area/space)
 "cqL" = (
 /obj/structure/stairs/multiz/down,
 /turf/open/floor/plating/plating_catwalk,
-/area/space)
+/area/almayer/maint/hull/lower/l_m_p)
 "cqM" = (
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 8
@@ -50514,15 +50518,16 @@
 	dir = 4
 	},
 /turf/open/floor/plating/plating_catwalk,
-/area/space)
+/area/almayer/maint/hull/lower/l_m_p)
 "cqO" = (
 /turf/open_space,
-/area/space)
+/area/almayer/maint/hull/lower/l_m_p)
 "cqP" = (
 /obj/structure/machinery/door/poddoor/almayer/blended/liaison{
 	emp_proof = 1;
 	unacidable = 1;
-	explo_proof = 1
+	explo_proof = 1;
+	id = "lowerdeckevent"
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/almayer/maint/hull/lower/l_m_p)
@@ -50536,6 +50541,67 @@
 	},
 /turf/open/floor/almayer,
 /area/almayer/shipboard/starboard_missiles)
+"cqR" = (
+/obj/effect/decal/hybrisa/wy_huge_logo,
+/turf/closed/wall/almayer/outer/internal,
+/area/almayer/underdeck)
+"cqS" = (
+/obj/structure/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/almayer/plating_striped/west,
+/area/almayer/underdeck)
+"cqT" = (
+/obj/structure/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/almayer/plating_striped/east,
+/area/almayer/underdeck)
+"cqU" = (
+/turf/open/floor/almayer/redcorner/south,
+/area/almayer/underdeck)
+"cqV" = (
+/turf/open/floor/almayer/red/southeast,
+/area/almayer/underdeck)
+"cqW" = (
+/obj/structure/platform_decoration/metal/almayer/east,
+/obj/structure/sign/safety/stairs{
+	pixel_x = -17;
+	pixel_y = 7
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"cqX" = (
+/obj/structure/window{
+	dir = 1
+	},
+/obj/structure/flora/bush/ausbushes/var3/fernybush,
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cqY" = (
+/obj/structure/flora/bush/ausbushes/var3/sunnybush,
+/obj/structure/window{
+	dir = 1
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cqZ" = (
+/obj/structure/flora/bush/ausbushes/var3/fernybush,
+/obj/structure/window{
+	dir = 4
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cra" = (
+/obj/structure/machinery/light,
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crb" = (
+/obj/structure/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
 "crc" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
@@ -50547,6 +50613,29 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/almayer/hallways/lower/port_midship_hallway)
+"crd" = (
+/obj/structure/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"cre" = (
+/obj/structure/flora/bush/ausbushes/var3/sparsegrass,
+/obj/structure/window{
+	dir = 4
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"crf" = (
+/obj/structure/machinery/door/airlock/almayer/security/glass,
+/turf/open/floor/almayer/test_floor4,
+/area/almayer/underdeck)
+"crg" = (
+/obj/structure/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/almayer/red/east,
+/area/almayer/underdeck)
 "crh" = (
 /obj/structure/machinery/light{
 	dir = 1
@@ -50560,9 +50649,293 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/almayer/maint/hull/upper/u_f_s)
+"crj" = (
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/hybrisa/carpet/rug_colorable/biege/east,
+/area/almayer/underdeck)
+"crk" = (
+/turf/open/floor/hybrisa/carpet/rug_colorable/biege/west,
+/area/almayer/underdeck)
+"crl" = (
+/obj/structure/machinery/light,
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crm" = (
+/obj/structure/bed/hybrisa/bunkbed3{
+	dir = 8
+	},
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"crn" = (
+/obj/structure/dartboard{
+	pixel_x = 0;
+	pixel_y = -29
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"cro" = (
+/obj/structure/flora/bush/ausbushes/lavendergrass,
+/obj/structure/window{
+	dir = 4
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"crp" = (
+/obj/structure/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crq" = (
+/obj/structure/machinery/cm_vending/sorted/medical/wall_med{
+	pixel_y = 38;
+	pixel_x = 6
+	},
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = -8;
+	pixel_y = 32
+	},
+/obj/structure/machinery/firealarm{
+	pixel_y = 22;
+	pixel_x = 5
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"crr" = (
+/obj/structure/platform_decoration/metal/almayer/west,
+/obj/item/device/radio/intercom{
+	freerange = 1;
+	name = "General Listening Channel";
+	pixel_y = 28;
+	pixel_x = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crs" = (
+/turf/open/floor/almayer/redcorner/east,
+/area/almayer/underdeck)
+"crt" = (
+/turf/open/floor/almayer/red/northeast,
+/area/almayer/underdeck)
+"cru" = (
+/obj/structure/sign/catclock{
+	pixel_y = -27;
+	pixel_x = 4
+	},
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 4;
+	pixel_y = 7
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crv" = (
+/obj/structure/bed/hybrisa/bunkbed3,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"crw" = (
+/obj/item/prop/magazine/book/spacebeast{
+	pixel_x = -4;
+	pixel_y = -4
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crx" = (
+/obj/structure/prop/hybrisa/furniture/tables/tablepool,
+/mob/living/simple_animal/small/mouse/rat/brown{
+	real_name = "Randy";
+	name = "Randy";
+	desc = "Randy the Rat!"
+	},
+/turf/open/floor/hybrisa/carpet/rug_colorable/biege/southeast,
+/area/almayer/underdeck)
+"cry" = (
+/obj/effect/decal/hybrisa/dirt,
+/obj/item/ashtray/bronze{
+	icon_state = "ashtray_full_bl";
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/turf/open/floor/hybrisa/carpet/rug_colorable/biege/southwest,
+/area/almayer/underdeck)
+"crz" = (
+/obj/effect/decal/hybrisa/dirt,
+/obj/item/trash/cigbutt,
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crA" = (
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crB" = (
+/obj/structure/bed/hybrisa/bunkbed2,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"crC" = (
+/obj/structure/platform_decoration/metal/almayer/north,
+/obj/structure/sign/poster/safety{
+	pixel_x = -33;
+	pixel_y = 24
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
 "crD" = (
 /turf/open/floor/almayer/greencorner/north,
 /area/almayer/squads/req)
+"crE" = (
+/obj/structure/machinery/light{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crF" = (
+/obj/structure/flora/bush/ausbushes/var3/fernybush,
+/obj/structure/window{
+	layer = 5
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"crG" = (
+/obj/structure/flora/bush/ausbushes/ywflowers,
+/obj/structure/window{
+	layer = 5
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"crH" = (
+/obj/structure/flora/bush/ausbushes/ausbush{
+	name = "fake ausbush";
+	desc = "Just like a real plant, but fake!"
+	},
+/obj/structure/window{
+	layer = 5
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"crI" = (
+/obj/structure/bed/hybrisa/bunkbed2{
+	dir = 1
+	},
+/obj/structure/sign/prop2{
+	pixel_x = -33;
+	pixel_y = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"crJ" = (
+/obj/effect/decal/hybrisa/trash{
+	icon_state = "trash_16";
+	pixel_y = 15
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crK" = (
+/obj/item/paper/crumpled,
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crL" = (
+/turf/open/floor/hybrisa/carpet/rug_colorable/biege/south,
+/area/almayer/underdeck)
+"crM" = (
+/turf/open/floor/hybrisa/carpet/rug_colorable/biege/north,
+/area/almayer/underdeck)
+"crN" = (
+/obj/item/reagent_container/glass/rag{
+	desc = "A pile of clothing, these need washing...";
+	name = "pile of clothing";
+	color = "#37485b";
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"crO" = (
+/obj/structure/sign/poster/wylogo{
+	pixel_x = -29;
+	pixel_y = 4
+	},
+/obj/structure/sign/poster/propaganda{
+	pixel_x = -41;
+	pixel_y = 2
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"crP" = (
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/structure/machinery/light/small,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/underdeck)
+"crQ" = (
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/structure/machinery/light/small,
+/obj/item/prop/magazine/dirty/torn/alt,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/underdeck)
+"crR" = (
+/obj/structure/bed/hybrisa/bunkbed2{
+	dir = 1
+	},
+/obj/structure/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"crS" = (
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/underdeck)
+"crT" = (
+/obj/structure/bed/hybrisa/bunkbed2,
+/obj/structure/noticeboard{
+	pixel_x = 32;
+	pixel_y = 6
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"crU" = (
+/obj/structure/window{
+	dir = 1
+	},
+/obj/structure/flora/bush/ausbushes/ausbush{
+	name = "fake ausbush";
+	desc = "Just like a real plant, but fake!"
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"crV" = (
+/obj/structure/window{
+	dir = 1
+	},
+/obj/structure/flora/bush/ausbushes/grassybush,
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"crW" = (
+/obj/structure/window{
+	dir = 1
+	},
+/obj/structure/flora/bush/ausbushes/var3/leafybush,
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"crX" = (
+/turf/open/floor/almayer/plating_stripedcorner/west,
+/area/almayer/underdeck)
+"crY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/safety/nonpress_0g{
+	pixel_x = 8;
+	pixel_y = -32
+	},
+/turf/open/floor/almayer/plating_striped/south,
+/area/almayer/underdeck)
+"crZ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer/plating_striped/south,
+/area/almayer/underdeck)
 "csa" = (
 /obj/structure/barricade/handrail{
 	dir = 4;
@@ -50575,10 +50948,166 @@
 	},
 /turf/open/floor/almayer/no_build/plate,
 /area/almayer/underdeck/hangar)
+"csb" = (
+/obj/structure/machinery/light/red,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer/plating_striped/south,
+/area/almayer/underdeck)
+"csc" = (
+/turf/open/floor/almayer/plating_striped/south,
+/area/almayer/underdeck)
 "csd" = (
 /obj/structure/closet/firecloset,
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/maint/hull/lower/stern)
+"cse" = (
+/obj/structure/sign/safety/nonpress_0g{
+	pixel_x = 8;
+	pixel_y = -32
+	},
+/turf/open/floor/almayer/plating_striped/south,
+/area/almayer/underdeck)
+"csf" = (
+/turf/open/floor/almayer/plating_stripedcorner/east,
+/area/almayer/underdeck)
+"csg" = (
+/obj/structure/machinery/door/airlock/almayer/generic{
+	dir = 1
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/almayer/underdeck)
+"csh" = (
+/obj/structure/bed/hybrisa/bunkbed2{
+	dir = 1
+	},
+/obj/structure/sign/safety/bathunisex{
+	pixel_x = -16;
+	pixel_y = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csi" = (
+/obj/effect/decal/hybrisa/dirt,
+/obj/item/trash/cigbutt,
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/underdeck)
+"csj" = (
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csk" = (
+/obj/structure/sign/banners/maximumeffort{
+	pixel_y = 30
+	},
+/obj/structure/bed/chair/wood/normal{
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csl" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/prop/colony/game{
+	pixel_y = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csm" = (
+/obj/structure/bed/chair/wood/normal{
+	dir = 8
+	},
+/obj/effect/decal/hybrisa/dirt,
+/obj/structure/window{
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csn" = (
+/obj/structure/bed/hybrisa/bunkbed4{
+	dir = 1
+	},
+/obj/structure/sign/calendar/wy{
+	pixel_y = 28
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"cso" = (
+/obj/structure/machinery/washing_machine,
+/obj/structure/machinery/washing_machine{
+	layer = 3.5;
+	pixel_y = 15
+	},
+/obj/item/ashtray/bronze{
+	pixel_x = 5;
+	pixel_y = 20;
+	layer = 5
+	},
+/obj/item/trash/cigbutt{
+	pixel_x = -5;
+	pixel_y = 25;
+	layer = 6
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csp" = (
+/obj/structure/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csq" = (
+/obj/structure/machinery/light,
+/obj/structure/sign/safety/bathunisex{
+	pixel_x = 15;
+	pixel_y = -26
+	},
+/obj/structure/sign/safety/west{
+	pixel_x = 0;
+	pixel_y = -26
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"csr" = (
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"css" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/landinglight{
+	dir = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"cst" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/landinglight/delayone{
+	dir = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"csu" = (
+/obj/structure/machinery/landinglight/delaytwo{
+	dir = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"csv" = (
+/obj/structure/machinery/landinglight/delaythree{
+	dir = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"csw" = (
+/obj/structure/machinery/landinglight{
+	dir = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"csx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/landinglight/delaytwo{
+	dir = 1
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
 "csy" = (
 /obj/structure/pipes/standard/manifold/fourway/hidden/supply,
 /obj/structure/disposalpipe/segment{
@@ -50586,9 +51115,194 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/shipboard/brig/visitation)
+"csz" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12;
+	pixel_y = 2
+	},
+/obj/structure/mirror{
+	pixel_x = -29;
+	pixel_y = -1
+	},
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csA" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csB" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/machinery/light,
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csC" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/machinery/light,
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csE" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csF" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out";
+	layer = 2.5;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csG" = (
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csH" = (
+/obj/structure/machinery/door/airlock/almayer/generic,
+/turf/open/floor/almayer/test_floor4,
+/area/almayer/underdeck)
 "csI" = (
 /turf/open/floor/almayer/red/west,
 /area/almayer/lifeboat_pumps/south1)
+"csJ" = (
+/obj/structure/flora/pottedplant{
+	icon_state = "pottedplant_29";
+	pixel_y = 4;
+	pixel_x = 3
+	},
+/obj/structure/machinery/light{
+	dir = 4
+	},
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csK" = (
+/obj/structure/bedsheetbin,
+/obj/structure/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csL" = (
+/obj/structure/machinery/landinglight/delaythree{
+	dir = 4
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"csM" = (
+/obj/structure/machinery/landinglight/delaythree{
+	dir = 8
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"csN" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12;
+	pixel_y = 2
+	},
+/obj/structure/mirror{
+	pixel_x = -29;
+	pixel_y = -1
+	},
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csO" = (
+/obj/structure/window{
+	dir = 4
+	},
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csP" = (
+/obj/structure/window/framed/almayer,
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csQ" = (
+/obj/structure/window{
+	dir = 8
+	},
+/obj/structure/prop/hybrisa/misc/trash,
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csR" = (
+/obj/structure/machinery/light{
+	dir = 4
+	},
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"csS" = (
+/obj/structure/bed/hybrisa/bunkbed2{
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csT" = (
+/obj/structure/prop/hybrisa/misc/trash,
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csU" = (
+/obj/structure/bed/hybrisa/bunkbed4,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csV" = (
+/obj/structure/bed/hybrisa/bunkbed4{
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csW" = (
+/obj/structure/bed/hybrisa/bunkbed4,
+/obj/item/clothing/suit/storage/snow_suit/hybrisa/polyester_jacket_red{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csX" = (
+/obj/structure/bedsheetbin,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"csY" = (
+/obj/structure/platform_decoration/metal/almayer/east,
+/obj/structure/sign/poster/ad{
+	pixel_x = 6;
+	pixel_y = 33
+	},
+/obj/structure/sign/poster/io{
+	pixel_x = -4;
+	pixel_y = 36
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
 "csZ" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
@@ -50614,10 +51328,123 @@
 	},
 /turf/open/floor/almayer/cargo_arrow/west,
 /area/almayer/squads/bravo)
+"cta" = (
+/obj/structure/machinery/newscaster{
+	pixel_x = 0;
+	pixel_y = 35
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctb" = (
+/obj/structure/machinery/light{
+	dir = 1
+	},
+/obj/structure/sign/safety/intercom{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"ctc" = (
+/obj/structure/machinery/landinglight/delaytwo{
+	dir = 4
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"ctd" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"cte" = (
+/obj/structure/machinery/landinglight{
+	dir = 8
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"ctf" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_x = 0;
+	pixel_y = 1
+	},
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12;
+	pixel_y = 2
+	},
+/obj/structure/mirror{
+	pixel_x = -29;
+	pixel_y = -1
+	},
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"ctg" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/dark,
+/area/almayer/underdeck)
 "cth" = (
 /obj/structure/largecrate/random/barrel/red,
 /turf/open/floor/almayer/plate,
 /area/almayer/maint/hull/upper/s_bow)
+"cti" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/dark,
+/area/almayer/underdeck)
+"ctj" = (
+/obj/item/trash/eat{
+	pixel_x = 10;
+	pixel_y = 10
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/underdeck)
+"ctk" = (
+/obj/structure/flora/bush/ausbushes/var3/sunnybush,
+/obj/structure/window{
+	layer = 5
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"ctl" = (
+/obj/structure/flora/bush/ausbushes/var3/ppflowers,
+/obj/structure/window{
+	layer = 5
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"ctm" = (
+/obj/structure/machinery/light{
+	dir = 8
+	},
+/obj/structure/sign/safety/south{
+	pixel_x = -17;
+	pixel_y = -7
+	},
+/obj/structure/sign/safety/fire_station{
+	pixel_x = -32;
+	pixel_y = 7
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"ctn" = (
+/obj/structure/machinery/light/red{
+	light_color = "#BB3F3F";
+	dir = 8
+	},
+/turf/open/floor/almayer/plating_striped/west,
+/area/almayer/underdeck)
+"cto" = (
+/obj/structure/machinery/landinglight/delayone{
+	dir = 4
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
 "ctp" = (
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice12";
@@ -50625,10 +51452,60 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/almayer/maint/hull/lower/l_a_s)
+"ctq" = (
+/obj/structure/machinery/landinglight/delayone{
+	dir = 8
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"ctr" = (
+/obj/structure/machinery/light/red{
+	light_color = "#BB3F3F";
+	dir = 4
+	},
+/turf/open/floor/almayer/plating_striped/east,
+/area/almayer/underdeck)
 "cts" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/almayer,
 /area/almayer/lifeboat_pumps/south1)
+"ctt" = (
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/machinery/shower{
+	pixel_y = 16
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/underdeck)
+"ctu" = (
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/machinery/shower{
+	pixel_y = 16
+	},
+/obj/item/tool/soap/weyland_yutani{
+	pixel_x = -6;
+	pixel_y = 5
+	},
+/obj/structure/window{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/underdeck)
+"ctv" = (
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/window{
+	dir = 8
+	},
+/obj/structure/machinery/shower{
+	pixel_y = 16
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/underdeck)
 "ctw" = (
 /obj/structure/machinery/door/airlock/almayer/maint,
 /turf/open/floor/almayer/test_floor4,
@@ -50659,6 +51536,166 @@
 	},
 /turf/open/floor/almayer/orange/east,
 /area/almayer/engineering/upper_engineering/port)
+"cty" = (
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/window{
+	dir = 8
+	},
+/obj/structure/machinery/shower{
+	pixel_y = 16
+	},
+/obj/item/tool/soap/weyland_yutani{
+	pixel_x = 5;
+	pixel_y = -4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/underdeck)
+"ctz" = (
+/obj/structure/window{
+	dir = 8
+	},
+/obj/structure/machinery/shower{
+	pixel_y = 16
+	},
+/obj/item/prop/magazine/dirty/torn{
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/almayer/underdeck)
+"ctA" = (
+/obj/structure/bed/hybrisa/bunkbed2{
+	dir = 1
+	},
+/obj/structure/sign/poster/corporate{
+	layer = 2.9;
+	pixel_y = 32
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctB" = (
+/obj/item/reagent_container/glass/rag{
+	desc = "A pile of clothing, these need washing...";
+	name = "pile of clothing";
+	color = "#973a3a";
+	pixel_y = 12;
+	pixel_x = -4
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"ctC" = (
+/obj/structure/bed/hybrisa/bunkbed1,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctD" = (
+/obj/structure/bed/hybrisa/bunkbed1{
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctE" = (
+/obj/structure/bed/hybrisa/bunkbed3{
+	dir = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctF" = (
+/obj/structure/sign/safety/water{
+	pixel_x = -17;
+	pixel_y = -7
+	},
+/obj/structure/sign/safety/north{
+	pixel_x = -17;
+	pixel_y = 7
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctG" = (
+/obj/structure/machinery/landinglight{
+	dir = 4
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"ctH" = (
+/obj/structure/machinery/landinglight/delaytwo{
+	dir = 8
+	},
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"ctI" = (
+/obj/structure/sign/calendar/wy{
+	pixel_y = 28
+	},
+/obj/item/reagent_container/glass/rag{
+	desc = "A pile of clothing, these need washing...";
+	name = "pile of clothing";
+	color = "#37485b";
+	pixel_y = 12
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"ctJ" = (
+/obj/structure/bed/hybrisa/bunkbed3,
+/obj/structure/prop/hybrisa/misc/machinery/screens/gold_clock{
+	pixel_y = 40
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctK" = (
+/obj/item/trash/cigbutt{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/trash/cigbutt{
+	pixel_x = -7;
+	pixel_y = -4
+	},
+/obj/item/trash/cigbutt{
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/obj/item/trash/cigbutt,
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"ctL" = (
+/obj/effect/decal/hybrisa/dirt,
+/obj/item/reagent_container/glass/rag{
+	desc = "A pile of clothing, these need washing...";
+	name = "pile of clothing";
+	color = "#973a3a"
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"ctM" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer/plating_striped/east,
+/area/almayer/underdeck)
+"ctN" = (
+/obj/structure/bed/hybrisa/bunkbed1,
+/obj/item/tool/pen{
+	pixel_x = -6;
+	pixel_y = 9
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctO" = (
+/obj/structure/bed/hybrisa/bunkbed3{
+	dir = 8
+	},
+/obj/structure/sign/banners/united_americas_flag_worn{
+	pixel_y = 30
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctP" = (
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 8;
+	pixel_x = 1
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
 "ctQ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -50670,17 +51707,236 @@
 	},
 /turf/open/floor/almayer/silver,
 /area/almayer/hallways/lower/repair_bay)
+"ctR" = (
+/obj/structure/flora/bush/ausbushes/var3/brflowers,
+/obj/structure/window{
+	dir = 8
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"ctS" = (
+/obj/structure/window/framed/almayer,
+/obj/structure/machinery/door/poddoor/hybrisa/open_shutters{
+	id = "eventshutters";
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/almayer/underdeck)
 "ctT" = (
 /obj/structure/machinery/door/firedoor/border_only/almayer{
 	dir = 2
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/almayer/shipboard/brig/general_equipment)
+"ctU" = (
+/obj/structure/sign/poster/pimp{
+	pixel_x = -28;
+	pixel_y = -2
+	},
+/obj/structure/sign/poster/pinup{
+	pixel_x = -25;
+	pixel_y = 11
+	},
+/obj/structure/sign/poster/hunk{
+	pixel_x = -36;
+	pixel_y = 8;
+	layer = 4
+	},
+/obj/structure/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctV" = (
+/obj/structure/flora/bush/ausbushes/lavendergrass,
+/obj/structure/window{
+	dir = 8
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"ctW" = (
+/obj/structure/bed/hybrisa/bunkbed4,
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctX" = (
+/obj/structure/bed/hybrisa/bunkbed4{
+	dir = 1
+	},
+/obj/effect/decal/hybrisa/dirt,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"ctY" = (
+/obj/structure/flora/bush/ausbushes/var3/leafybush,
+/obj/structure/window{
+	dir = 8
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"ctZ" = (
+/obj/structure/window/framed/almayer/hull,
+/obj/structure/machinery/door/poddoor/hybrisa/open_shutters{
+	id = "eventshuttersbed"
+	},
+/turf/open/floor/plating,
+/area/almayer/underdeck)
+"cua" = (
+/obj/structure/machinery/door/airlock/almayer/generic/glass{
+	dir = 1
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/almayer/underdeck)
+"cub" = (
+/obj/structure/window{
+	dir = 1
+	},
+/obj/structure/flora/bush/desert,
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cuc" = (
+/obj/structure/window{
+	dir = 1
+	},
+/obj/structure/flora/bush/ausbushes/var3/sunnybush,
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cud" = (
+/obj/structure/flora/bush/ausbushes/ausbush{
+	name = "fake ausbush";
+	desc = "Just like a real plant, but fake!"
+	},
+/obj/structure/window{
+	dir = 1
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cue" = (
+/obj/structure/window{
+	dir = 1
+	},
+/obj/structure/flora/bush/ausbushes/var3/stalkybush,
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cuf" = (
+/obj/structure/window{
+	dir = 1
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cug" = (
+/obj/effect/decal/hybrisa/deco_edging{
+	color = "#797979"
+	},
+/turf/open/floor/almayer/dark_sterile2,
+/area/almayer/underdeck)
+"cuh" = (
+/obj/structure/window{
+	dir = 1
+	},
+/obj/structure/flora/bush/ausbushes/palebush,
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cui" = (
+/obj/structure/machinery/light,
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"cuj" = (
+/obj/effect/decal/hybrisa/deco_edging{
+	color = "#797979";
+	dir = 8
+	},
+/turf/open/floor/almayer/dark_sterile2,
+/area/almayer/underdeck)
+"cuk" = (
+/turf/open/floor/almayer/dark_sterile2,
+/area/almayer/underdeck)
+"cul" = (
+/obj/effect/decal/hybrisa/deco_edging{
+	color = "#797979";
+	dir = 4
+	},
+/turf/open/floor/almayer/dark_sterile2,
+/area/almayer/underdeck)
+"cum" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	id = "eventhanger";
+	name = "\improper Umbillical Airlock";
+	unacidable = 1;
+	explo_proof = 1;
+	emp_proof = 1;
+	dir = 8
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/almayer/underdeck)
+"cun" = (
+/obj/effect/decal/hybrisa/wy_huge_logo{
+	pixel_x = -16;
+	pixel_y = -22
+	},
+/turf/open/floor/almayer/dark_sterile2,
+/area/almayer/underdeck)
+"cuo" = (
+/obj/structure/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"cup" = (
+/obj/structure/platform_decoration/metal/almayer/west,
+/obj/effect/decal/hybrisa/deco_edging{
+	color = "#797979";
+	dir = 8
+	},
+/turf/open/floor/almayer/dark_sterile2,
+/area/almayer/underdeck)
 "cuq" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/wood/ship,
 /area/almayer/command/corporateliaison)
+"cur" = (
+/obj/structure/platform/metal/almayer/north,
+/turf/open/floor/almayer/dark_sterile2,
+/area/almayer/underdeck)
+"cus" = (
+/obj/structure/platform_decoration/metal/almayer/east,
+/obj/effect/decal/hybrisa/deco_edging{
+	color = "#797979";
+	dir = 4
+	},
+/turf/open/floor/almayer/dark_sterile2,
+/area/almayer/underdeck)
+"cut" = (
+/obj/structure/platform_decoration/metal/almayer/east,
+/obj/structure/machinery/door_control{
+	pixel_x = 1;
+	pixel_y = 23;
+	name = "Dock Shutters";
+	id = "eventhanger"
+	},
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"cuu" = (
+/obj/structure/machinery/door_control{
+	pixel_x = 1;
+	pixel_y = 23;
+	name = "Dock Shutters";
+	id = "eventhanger"
+	},
+/turf/open/floor/almayer/plate,
+/area/almayer/underdeck)
+"cuv" = (
+/obj/structure/machinery/landinglight/delaytwo,
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"cuw" = (
+/obj/structure/machinery/landinglight/delayone,
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"cux" = (
+/obj/structure/machinery/landinglight,
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
 "cuy" = (
 /obj/item/tool/warning_cone{
 	pixel_y = 13
@@ -50690,9 +51946,86 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/almayer/hallways/hangar)
+"cuz" = (
+/obj/structure/machinery/landinglight/delaythree,
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"cuA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/landinglight,
+/turf/open/floor/almayer/plating/northeast,
+/area/almayer/underdeck)
+"cuB" = (
+/obj/structure/window/framed/almayer/hull,
+/obj/structure/machinery/door/poddoor/almayer/blended/liaison{
+	emp_proof = 1;
+	unacidable = 1;
+	explo_proof = 1;
+	id = "lowerdeckeventwindows"
+	},
+/turf/open/floor/plating,
+/area/almayer/underdeck)
 "cuC" = (
 /turf/closed/wall/almayer/outer,
 /area/almayer/engineering/upper_engineering/starboard)
+"cuD" = (
+/obj/structure/window{
+	layer = 5
+	},
+/obj/structure/flora/bush/ausbushes/ywflowers,
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cuE" = (
+/obj/structure/window{
+	layer = 5
+	},
+/obj/structure/flora/bush/ausbushes/var3/ppflowers,
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cuF" = (
+/obj/structure/window{
+	layer = 5
+	},
+/obj/structure/flora/bush/ausbushes/var3/brflowers,
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cuG" = (
+/obj/structure/machinery/vending/cigarette/wy/free,
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"cuH" = (
+/obj/structure/machinery/vending/coffee,
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"cuI" = (
+/obj/structure/machinery/vending/cola/alt,
+/turf/open/floor/almayer,
+/area/almayer/underdeck)
+"cuJ" = (
+/obj/structure/window{
+	layer = 5
+	},
+/turf/open/floor/grass,
+/area/almayer/underdeck)
+"cuK" = (
+/obj/structure/sign/safety/nonpress_0g{
+	pixel_x = 8;
+	pixel_y = 32
+	},
+/turf/open/floor/almayer/plating_striped/north,
+/area/almayer/underdeck)
+"cuL" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer/plating_striped/north,
+/area/almayer/underdeck)
+"cuM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/red{
+	light_color = "#BB3F3F";
+	dir = 1
+	},
+/turf/open/floor/almayer/plating_striped/north,
+/area/almayer/underdeck)
 "cuN" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -50702,10 +52035,47 @@
 	},
 /turf/open/floor/almayer/red/west,
 /area/almayer/hallways/upper/starboard)
+"cuO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/safety/nonpress_0g{
+	pixel_x = 8;
+	pixel_y = 32
+	},
+/turf/open/floor/almayer/plating_striped/north,
+/area/almayer/underdeck)
 "cuP" = (
 /obj/structure/machinery/door/airlock/almayer/maint,
 /turf/open/floor/almayer/no_build/plate,
 /area/almayer/underdeck/hangar)
+"cuQ" = (
+/obj/structure/machinery/light/red{
+	light_color = "#BB3F3F";
+	dir = 1
+	},
+/turf/open/floor/almayer/plating_striped/north,
+/area/almayer/underdeck)
+"cuR" = (
+/obj/structure/sign/safety/nonpress_0g{
+	pixel_x = 8;
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer/plating_striped/north,
+/area/almayer/underdeck)
+"cuS" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/almayer/plating_stripedcorner/south,
+/area/almayer/underdeck)
+"cuT" = (
+/obj/structure/window/framed/almayer/hull,
+/obj/structure/machinery/door/poddoor/almayer/blended/liaison{
+	emp_proof = 1;
+	unacidable = 1;
+	explo_proof = 1;
+	id = "lowerdeckeventwindows"
+	},
+/turf/open/floor/plating,
+/area/almayer/underdeck/req)
 "cuY" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -54447,7 +55817,7 @@
 /area/almayer/hallways/upper/port)
 "efk" = (
 /obj/structure/machinery/door/poddoor/almayer{
-	id = "s_umbilical";
+	id = "eventhanger";
 	name = "\improper Umbillical Airlock";
 	unacidable = 1;
 	explo_proof = 1;
@@ -117752,9 +119122,9 @@ aHU
 aHU
 aHU
 aHU
-aHU
-aHU
-aHU
+ctf
+csN
+csz
 aHU
 aHU
 aHU
@@ -117854,12 +119224,12 @@ aHU
 aHU
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+ctt
+ctg
+csO
+csA
+csg
+crP
 aHU
 aHU
 aHU
@@ -117957,10 +119327,10 @@ aHU
 aHU
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
+ctu
+cti
+csP
+csB
 aHU
 aHU
 aHU
@@ -118060,12 +119430,12 @@ aHU
 aHU
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+ctv
+ctg
+csP
+csC
+csg
+crQ
 aHU
 aHU
 aHU
@@ -118163,10 +119533,10 @@ aHU
 aHU
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
+ctv
+ctg
+csP
+csD
 aHU
 aHU
 aHU
@@ -118266,12 +119636,12 @@ aHU
 aHU
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cty
+ctg
+csP
+csE
+csg
+crP
 aHU
 aHU
 aHU
@@ -118369,10 +119739,10 @@ aHU
 aHU
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
+ctv
+cti
+csQ
+csF
 aHU
 aHU
 aHU
@@ -118472,10 +119842,10 @@ aHU
 aHU
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
+ctz
+cti
+csR
+csG
 aHU
 aHU
 aHU
@@ -118565,6 +119935,9 @@ jVH
 tTn
 gmY
 aHU
+bKI
+bKI
+bKI
 aHU
 aHU
 aHU
@@ -118575,10 +119948,7 @@ aHU
 aHU
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
+csH
 aHU
 aHU
 aHU
@@ -118668,23 +120038,23 @@ jVH
 qmB
 mbo
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bKI
-bKI
 bKI
 bBU
+cov
+aHU
+aHU
+aHU
+aHU
+aHU
+aHU
+aHU
+ctA
+crR
+csS
 bKI
-bKI
-bKI
+csh
+crR
+crI
 aHU
 aHU
 aHU
@@ -118771,24 +120141,24 @@ jVH
 qmB
 mbo
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bKI
 bKI
 bBU
+cqs
+cub
+aHU
+aHU
+aHU
+aHU
+aHU
+ctI
+ctB
 bBU
 bBU
 bBU
+csi
 bBU
-bKI
-bKI
+crJ
+cru
 aHU
 aHU
 aHU
@@ -118873,26 +120243,26 @@ wvw
 jVH
 xLS
 upQ
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bKI
-bKI
+cuB
 bKI
 bBU
-bNx
-bNx
-bNx
+cqs
+cuc
+aHU
+csV
+csV
+aHU
+aHU
+ctJ
+crv
 bBU
-bKI
-bKI
-bKI
+csT
+csJ
+csj
+crS
+crv
+crv
+aHU
 aHU
 aHU
 aHU
@@ -118976,26 +120346,26 @@ jVH
 jVH
 ukS
 dyk
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuB
+bKI
 bBU
+cqs
+cud
+ctZ
+bKI
+crA
+ctU
+bKI
+crA
+crA
 bBU
-bBU
-bBU
-bNx
+csU
 aHU
-bNx
-bBU
-bBU
-bBU
-bBU
+csk
+crS
+crK
+crw
+cra
 aHU
 aHU
 aHU
@@ -119079,26 +120449,26 @@ jVH
 jVH
 ukS
 dST
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bKI
-bKI
+cuB
 bKI
 bBU
-bNx
-aHU
-bNx
+cqs
+cue
+ctZ
+csU
+ctW
+csj
+ctN
+ctC
+ctC
 bBU
-bKI
-bKI
-bKI
+csV
+aHU
+csl
+bBU
+crL
+crx
+crj
 aHU
 aHU
 aHU
@@ -119182,26 +120552,26 @@ jVH
 iMl
 ukS
 dST
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bKI
-bKI
+cuB
 bKI
 bBU
+cqs
+bLF
+ctZ
+csV
+ctX
 bNx
+ctD
+ctD
+ctD
+ctj
+csW
 aHU
-bNx
+csm
 bBU
-bKI
-bKI
-bKI
+crM
+cry
+crk
 aHU
 aHU
 aHU
@@ -119285,26 +120655,26 @@ jVH
 iMl
 ukS
 dST
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuB
+bKI
 bBU
+cqs
+cuf
+ctZ
+crA
+crA
+crb
+bKI
+ctK
+bKI
 bBU
-bBU
-bBU
-bNx
+csV
 aHU
-bNx
+csn
 bBU
-bBU
-bBU
-bBU
+crN
+crz
+crl
 aHU
 aHU
 aHU
@@ -119388,26 +120758,26 @@ jVH
 iMl
 ukS
 upQ
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bKI
-bKI
+cuB
 bKI
 bBU
-bNx
-bNx
-bNx
+cqs
+cuc
+aHU
+csU
+ctW
+aHU
+ctO
+ctE
+ctE
 bBU
-bKI
-bKI
-bKI
+csX
+csK
+cso
+bBU
+crm
+crm
+crm
 aHU
 aHU
 aHU
@@ -119492,25 +120862,25 @@ jnU
 glT
 mbo
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
 bKI
-bKI
-bKI
+bBU
+cqs
+cud
+aHU
+aHU
+aHU
+aHU
+ctP
+ctL
+crA
+crS
+crS
 bBU
 bBU
 bBU
-bBU
-bBU
-bKI
-bKI
-bKI
+crA
+crA
+crn
 aHU
 aHU
 aHU
@@ -119595,24 +120965,24 @@ bCa
 bBL
 bBr
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bKI
-bKI
-bKI
 bKI
 bBU
-bKI
-bKI
-bKI
-bKI
+cqt
+aHU
+aHU
+aHU
+aHU
+aHU
+aHU
+crB
+crB
+crB
+crB
+bBU
+crB
+crT
+crB
+crB
 aHU
 aHU
 aHU
@@ -119698,6 +121068,9 @@ bBJ
 kXk
 aDS
 aHU
+bKI
+bBU
+bKI
 aHU
 aHU
 aHU
@@ -119708,10 +121081,7 @@ aHU
 aHU
 aHU
 aHU
-aHU
-aHU
-aHU
-cqu
+cqy
 aHU
 aHU
 aHU
@@ -119801,21 +121171,21 @@ tTn
 mbo
 aDS
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuo
 bNx
+cui
+aHU
+aHU
+aHU
+bKI
+crd
+bKI
+aHU
+aHU
+aHU
+csp
 bNx
-bNx
+csp
 aHU
 aHU
 aHU
@@ -119904,16 +121274,16 @@ tTn
 uro
 aDS
 aHU
+bKI
+bBU
+bKI
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+bKI
+bKI
+bKI
+bKI
+bKI
 aHU
 aHU
 cqv
@@ -120005,24 +121375,24 @@ tRu
 jVH
 tTn
 uro
-aDS
+cuT
+bKI
+bKI
+bBU
+bKI
+bNx
 aHU
+crp
+bKI
+bKI
+bKI
+cra
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bLF
+ctk
 cqw
 bBU
 cqs
-bLF
+crU
 aHU
 aHU
 aHU
@@ -120108,24 +121478,24 @@ jVH
 jVH
 tTn
 uro
-aDS
+cuT
+bKI
+bKI
+bBU
+bBU
+bNx
+cua
+bKI
+bKI
+bKI
+bKI
+bKI
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bLF
+crH
 cqw
 bBU
 cqs
-bLF
+crV
 aHU
 aHU
 aHU
@@ -120211,24 +121581,24 @@ sSL
 jVH
 tTn
 uro
-aDS
+cuT
+bKI
+bKI
+bBU
+bKI
+bNx
 aHU
+crp
+bKI
+bKI
+bKI
+cra
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bLF
+ctl
 cqw
 bBU
 cqs
-bLF
+crW
 aHU
 aHU
 aHU
@@ -120316,19 +121686,19 @@ tTn
 uro
 aDS
 aHU
+bKI
+bBU
+bKI
 aHU
 aHU
+bKI
+bKI
+bKI
+bKI
+bKI
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bjI
+csY
 bBU
 cqt
 aHU
@@ -120419,19 +121789,19 @@ tTn
 uro
 aDS
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuo
 bNx
+cui
+aHU
+aHU
+aHU
+aHU
+aHU
+aHU
+aHU
+aHU
+aHU
+cta
 bNx
 bNx
 aHU
@@ -120522,9 +121892,9 @@ tTn
 uro
 aDS
 aHU
-bKI
-bKI
-bKI
+cup
+cuj
+cuj
 aHU
 aHU
 aHU
@@ -120534,15 +121904,15 @@ cqB
 aHU
 aHU
 aHU
-bKI
+ctb
 bBU
-bKI
+csq
 aHU
 aHU
 aHU
-bLF
-bLF
-bLF
+cro
+cre
+cqZ
 aHU
 aHU
 aHU
@@ -120624,32 +121994,32 @@ bCc
 ovt
 bBq
 aDS
-bKI
-bKI
-bKI
-bKI
-bKI
-bNx
+cuD
+cur
+cun
+cuk
+cug
+csp
 cqG
 cqC
 cqC
 cqC
 cqA
-bNx
-bKI
+ctF
+ctm
 bKI
 bBU
 bKI
-bKI
-bNx
-cqt
+crd
+crO
+crC
 bMN
 bMN
 bMN
-bjI
+cqW
 bhz
 bgG
-bgG
+cqS
 bgG
 bbi
 aDL
@@ -120727,11 +122097,11 @@ bCc
 ovt
 bBM
 aDS
-bKI
-bKI
-bBU
-bBU
-bBU
+cuE
+cur
+cuk
+cuk
+cug
 bNx
 bBU
 bBU
@@ -120830,12 +122200,12 @@ sBK
 gKW
 uro
 aDS
-bKI
-bKI
-bBU
-bKI
-bKI
-bNx
+cuF
+cur
+cuk
+cuk
+cug
+crb
 cov
 cqD
 cqD
@@ -120848,14 +122218,14 @@ bBU
 bKI
 bKI
 bNx
-bKI
+crE
 bKI
 bBU
 bKI
 bKI
 biO
 bhk
-bhk
+cqT
 bhk
 bbi
 aDL
@@ -120934,27 +122304,27 @@ tTn
 uro
 aDS
 aHU
-bKI
+cus
+cul
+cul
+aHU
+aHU
+aHU
+ctY
+ctV
+ctR
+aHU
+aHU
+aHU
+crb
+bNx
+crb
+aHU
+aHU
+aHU
+crp
 bBU
-bKI
-aHU
-aHU
-aHU
-bLF
-bLF
-bLF
-aHU
-aHU
-aHU
-bNx
-bNx
-bNx
-aHU
-aHU
-aHU
-bKI
-bBU
-bKI
+cra
 aHU
 aHU
 aHU
@@ -121037,15 +122407,15 @@ tTn
 uro
 aDS
 aHU
+cuo
 bNx
-bNx
-bNx
+cui
 aHU
 aHU
 aHU
-cqx
-cqx
-cqx
+ctS
+ctS
+ctS
 aHU
 aHU
 aHU
@@ -121055,7 +122425,7 @@ aHU
 aHU
 aHU
 aHU
-bNx
+crq
 bNx
 bNx
 aHU
@@ -121152,13 +122522,13 @@ bKI
 bKI
 bKI
 bKI
+crd
 bKI
-bKI
-bKI
+crd
 bKI
 aHU
 aHU
-cqv
+crr
 bBU
 cov
 aHU
@@ -121241,12 +122611,12 @@ jVH
 rgP
 tTn
 uro
-aDS
-bKI
+cuT
+cuG
 bKI
 bBU
 cqs
-bLF
+cue
 cqx
 bKI
 bKI
@@ -121260,7 +122630,7 @@ bKI
 bKI
 bKI
 cqx
-bLF
+crF
 cqw
 bBU
 cqs
@@ -121344,12 +122714,12 @@ jVH
 kOa
 sdA
 uro
-aDS
-bKI
+cuT
+cuH
 bKI
 bBU
 cqs
-bLF
+cub
 cqx
 bKI
 bKI
@@ -121363,11 +122733,11 @@ bKI
 bKI
 bKI
 cqx
-bLF
+crG
 cqw
 bBU
 cqs
-bLF
+cqX
 aHU
 aHU
 aHU
@@ -121447,12 +122817,12 @@ eLW
 eLW
 sdA
 uro
-aDS
-bKI
+cuT
+cuI
 bKI
 bBU
 cqs
-bLF
+cuh
 cqx
 bKI
 bKI
@@ -121466,11 +122836,11 @@ bKI
 bKI
 bKI
 cqx
-bLF
+crH
 cqw
 bBU
 cqs
-bLF
+cqY
 aHU
 aHU
 aHU
@@ -121655,34 +123025,34 @@ tTn
 uro
 aDS
 aHU
+cuo
 bNx
+cui
+aHU
+aHU
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+aHU
+aHU
+aHU
+aHU
+crb
 bNx
-bNx
-aHU
-aHU
-bKI
-bKI
-bKI
-bKI
-bKI
-bKI
-bKI
-bKI
-bKI
-aHU
-aHU
-aHU
-aHU
-bNx
-bNx
-bNx
+crb
 aHU
 aHU
 aHU
 aHU
 aHU
 aHU
-aHU
+cqR
 aHU
 aHU
 aHU
@@ -121758,7 +123128,7 @@ tTn
 uro
 aDS
 aHU
-bKI
+cqv
 bBU
 bKI
 aHU
@@ -121777,7 +123147,7 @@ aHU
 aHU
 aHU
 aHU
-cqu
+crf
 aHU
 aHU
 aHU
@@ -121786,7 +123156,7 @@ aHU
 aHU
 aHU
 aHU
-aHU
+cqR
 aHU
 aHU
 aHU
@@ -121860,8 +123230,8 @@ jVH
 tTn
 dST
 aDS
-bKI
-bKI
+cuJ
+cqw
 bBU
 bKI
 bNx
@@ -121874,22 +123244,22 @@ bKI
 bKI
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
-bKI
-bKI
-bKI
 bKI
 bKI
 aHU
 aHU
+bKI
+crd
+bKI
+crd
+bKI
 aHU
 aHU
 aHU
 aHU
 aHU
+aHU
+cqR
 aHU
 aHU
 aHU
@@ -121963,8 +123333,8 @@ bCf
 ksS
 bBO
 aDS
-bKI
-bKI
+cuJ
+cqw
 bBU
 bBU
 bNx
@@ -121976,23 +123346,23 @@ bKI
 bKI
 bKI
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+bKI
+bKI
+bKI
+cqu
 bKI
 bKI
 bKI
 bKI
 bKI
+bKI
+bKI
 aHU
 aHU
 aHU
 aHU
 aHU
-aHU
-aHU
+cqR
 aHU
 aHU
 aHU
@@ -122066,8 +123436,8 @@ pXD
 ifW
 bBP
 aDS
-bKI
-bKI
+cuJ
+cqw
 bBU
 bKI
 bNx
@@ -122079,24 +123449,24 @@ bKI
 bKI
 aHU
 aHU
+bKI
+bKI
+bKI
 aHU
-aHU
-aHU
-aHU
-aHU
+crs
 bKI
 bKI
 bKI
 bKI
 bKI
+cqU
 aHU
 aHU
 aHU
 aHU
 aHU
 aHU
-aHU
-aHU
+cqR
 aHU
 aHU
 aHU
@@ -122170,7 +123540,7 @@ iez
 dST
 aDS
 aHU
-bKI
+bjI
 bBU
 bKI
 aHU
@@ -122182,24 +123552,24 @@ bKI
 bKI
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-bKI
-bKI
 bKI
 bKI
 bKI
 aHU
+crt
+crs
+bKI
+bKI
+bKI
+cqU
+cqV
 aHU
 aHU
 aHU
 aHU
 aHU
 aHU
-aHU
+cqR
 aHU
 aHU
 aHU
@@ -122273,9 +123643,9 @@ ukS
 dST
 aDS
 aHU
+cuo
 bNx
-bNx
-bNx
+cui
 aHU
 aHU
 aHU
@@ -122290,11 +123660,11 @@ aHU
 aHU
 aHU
 aHU
+crt
+crs
 bKI
-bKI
-bKI
-bKI
-bKI
+cqU
+cqV
 aHU
 aHU
 aHU
@@ -122302,7 +123672,7 @@ aHU
 aHU
 aHU
 aHU
-aHU
+cqR
 aHU
 aHU
 aHU
@@ -122376,11 +123746,27 @@ ukS
 dST
 aDS
 aHU
-bKI
+cqv
 bBU
 bKI
 aHU
 aHU
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+aHU
+aHU
+aHU
+crt
+crg
+cqV
 aHU
 aHU
 aHU
@@ -122389,23 +123775,7 @@ aHU
 aHU
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cqR
 xXs
 xXs
 xXs
@@ -122478,22 +123848,22 @@ jVH
 ukS
 dST
 aDS
-bKI
-bKI
+cuJ
+cqw
 bBU
 bKI
+bNx
+aHU
 bKI
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
 aHU
 aHU
 aHU
@@ -122581,22 +123951,22 @@ iFW
 iSO
 xCT
 aDS
-bKI
-bKI
+cuJ
+cqw
 bBU
+bBU
+bNx
+cqu
 bKI
 bKI
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
 aHU
 aHU
 aHU
@@ -122684,22 +124054,22 @@ bSd
 eoz
 hle
 aDS
-bKI
-bKI
+cuJ
+cqw
 bBU
 bKI
+bNx
+aHU
 bKI
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
 aHU
 aHU
 aHU
@@ -122788,21 +124158,21 @@ kIz
 aDS
 aDS
 aHU
-bKI
+cut
 bBU
 bKI
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
 aHU
 aHU
 aHU
@@ -122891,21 +124261,21 @@ dvW
 aDS
 aDS
 aHU
+cum
+cum
+cum
 aHU
 aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
+bKI
 aHU
 aHU
 aHU
@@ -122994,9 +124364,9 @@ gbQ
 aDS
 aDS
 aHU
-aHU
-aHU
-aHU
+cuu
+bNx
+bNx
 aHU
 aHU
 aHU
@@ -123096,23 +124466,23 @@ wFp
 wFp
 uro
 aDS
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+bhz
+bgG
+bgG
+bgG
+ctn
+bgG
+bgG
+bgG
+bgG
+bgG
+bgG
+bgG
+ctn
+bgG
+bgG
+bgG
+crX
 aHU
 aHU
 aHU
@@ -123199,23 +124569,23 @@ uEM
 wFp
 lcj
 aDS
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuK
+csr
+csL
+ctG
+cto
+ctc
+csL
+ctG
+cto
+ctc
+csL
+ctG
+cto
+ctc
+csL
+csr
+crY
 aHU
 aHU
 aHU
@@ -123302,23 +124672,23 @@ uEM
 qfR
 rWE
 aDS
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuL
+cuv
+csr
+csr
+ctd
+ctd
+ctd
+csr
+ctd
+csr
+csr
+csr
+csr
+csr
+csr
+css
+crZ
 aHU
 aHU
 aHU
@@ -123405,23 +124775,23 @@ uEM
 rIh
 cWv
 aDS
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuM
+cuw
+csr
+ctd
+ctd
+ctd
+ctd
+ctd
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+cst
+csb
 aHU
 aHU
 aHU
@@ -123508,23 +124878,23 @@ uEM
 ggv
 dST
 aDS
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuL
+cux
+csr
+ctd
+ctd
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csu
+csc
 aHU
 aHU
 aHU
@@ -123611,23 +124981,23 @@ uEM
 ggv
 dST
 aDS
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuO
+cuz
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csv
+cse
 aHU
 aHU
 aHU
@@ -123714,23 +125084,23 @@ glX
 ggv
 dST
 aDS
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+bic
+cuv
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csw
+csc
 aHU
 aHU
 aHU
@@ -123817,23 +125187,23 @@ glX
 ggv
 dST
 aDS
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuQ
+cuw
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+cst
+csb
 aHU
 aHU
 aHU
@@ -123920,23 +125290,23 @@ ggv
 ggv
 dST
 aDS
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+bic
+cuA
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+csr
+ctd
+csr
+csx
+crZ
 aHU
 aHU
 aHU
@@ -124023,23 +125393,23 @@ dST
 nzs
 aDS
 aDS
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuR
+csr
+csM
+ctH
+ctq
+cte
+csM
+ctH
+ctq
+cte
+csM
+ctH
+ctq
+cte
+csM
+csr
+cse
 aHU
 aHU
 aHU
@@ -124126,23 +125496,23 @@ aDS
 aDS
 aDS
 aDS
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
-aHU
+cuS
+bhk
+ctM
+bhk
+ctr
+bhk
+ctM
+ctM
+ctM
+ctM
+ctM
+bhk
+ctr
+bhk
+bhk
+bhk
+csf
 aHU
 aHU
 aHU
@@ -151453,10 +152823,10 @@ mJO
 jPx
 mgb
 lyW
-aKQ
-aKQ
-aKQ
-aKQ
+lyW
+lyW
+lyW
+lyW
 ajZ
 aaa
 aab
@@ -151558,8 +152928,8 @@ pgJ
 lyW
 cqO
 cqL
-cqK
-aKQ
+mgb
+lyW
 ajZ
 aaa
 aab
@@ -151661,8 +153031,8 @@ mgb
 cqP
 cqN
 cqN
-cqK
-aKQ
+mgb
+lyW
 ajZ
 aaa
 aab
@@ -151764,8 +153134,8 @@ xbg
 lyW
 cqO
 cqL
-cqK
-aKQ
+mgb
+lyW
 ajZ
 aaa
 aab
